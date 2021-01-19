@@ -1,8 +1,8 @@
 const express = require('express');
-const app = express();
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+const app = express();
 require('dotenv/config');
 
 // Import Routes
@@ -20,5 +20,5 @@ mongoose.connect(
     () => console.log('Connected to DB')
 );
 
-// How we listening to the server
+// How we listening to the server (localhost:3000)
 app.listen(3000);
